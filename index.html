@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function parraf_roig(){
+            var elparrafroij = document.getElementById("mi_parraforojo");
+            elparrafroij.style.color = 'red';
+        }
+
+        function parraf_taronja(){
+            var elparraforange = document.getElementById("mi_parrafonaranja");
+            elparraforange.style.color = 'orange';
+        }   
+        function parraf_groc(){
+            var elparrafgroc = document.getElementById("mi_parrafoamarillo");
+            elparrafgroc.style.color = 'yellow';
+        }    
+        function parraf_verd(){
+            var elparrafverd = document.getElementById("mi_parrafoverde");
+            elparrafverd.style.color = 'green';
+        } 
+
+        function parraf_blau(){
+            var elparrafblau = document.getElementById("mi_parrafoazul");
+            elparrafblau.style.color = 'blue';
+        } 
+
+        function parraf_morat(){
+            var elparrafmorat = document.getElementById("mi_parrafomorado");
+            elparrafmorat.style.color = 'purple';
+        } 
+
+        function parraf_blauclar(){
+            var elparrafblauclar = document.getElementById("mi_parrafoazulclaro");
+            elparrafblauclar.style.color = 'cyan';
+        } 
+
+        function arcSantMarti(){
+            parraf_roig();
+            parraf_taronja();
+            parraf_groc();
+            parraf_verd();
+            parraf_blau();
+            parraf_morat();
+            parraf_blauclar();
+        }
+    </script>
+</head>
+<body>
+
+    <h3 onclick="arcSantMarti()">Arc de Sant Martí</h3>
+
+    <p onmouseover="parraf_roig()" id="mi_parraforojo" onmouseout="parraf_negre1()">roij,red,rojo</p>
+    <p onmouseover="parraf_taronja()" id="mi_parrafonaranja" onmouseout="parraf_negre2()">taronja,orange,naranja</p>
+    <p onmouseover="parraf_groc()" id="mi_parrafoamarillo" onmouseout="parraf_negre3()">groc,yellow,amarillo</p>
+    <p onmouseover="parraf_verd()" id="mi_parrafoverde" onmouseout="parraf_negre4()">verd,green,verde</p>
+    <p onmouseover="parraf_blauclar()" id="mi_parrafoazulclaro" onmouseout="parraf_negre5()">blauclar,cyan,azul claro</p>
+    <p onmouseover="parraf_blau()" id="mi_parrafoazul" onmouseout="parraf_negre6()">blau,blue,azul</p>
+    <p onmouseover="parraf_morat()" id="mi_parrafomorado" onmouseout="parraf_negre7()">morat,purple,morado</p>
+
+</body>
+</html>
